@@ -40,3 +40,12 @@ promise2.catch(() => {
 
   document.body.append(div);
 });
+
+promise2.then(() => {
+  const div = document.createElement('div');
+
+  div.classList.add('message');
+  div.textContent = 'Promise was resolved!';
+
+  document.body.append(div);
+});
